@@ -1,0 +1,6 @@
+fastAPI==0.105.0
+pydantic==2.5.2
+openai==1.7.1
+uvicorn==0.24.0
+typing==3.7.4.3
+python-dotenv==1.0.0
