@@ -8,8 +8,11 @@ from openai import OpenAI
 
 app = FastAPI()
 
+#loading the .env file and setting the keys for OpenAI GPT
+load_dotenv()
+
 #The API key should never live within your code. Create a .env and use the os and python-doenv packages to read it
-client = OpenAI(api_key='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')
+client = OpenAI(api_key=os.environ.get("GPT_KEY"))
 
 @app.get("/")
 def warmup():
